@@ -35,10 +35,10 @@ layout: image-right
 
 <div class="h-2" />
 
-- 27歳
-- 2人+1匹暮らし
+- 27歳/AB型
 - 2019年入社
 - ICT採用
+- 2人+1匹暮らし
 
 <img src="/undraw_base_family.png" class="w-1/2 fixed right-8 bottom-1/4" />
 
@@ -67,8 +67,8 @@ layout: image-right
 
 - フロントエンド領域
   - 開発
-  - レビュー <uim-star class="text-yellow-500" />
-  - 質問対応/コワークなどのサポート <uim-star class="text-yellow-500" />
+  - <span class="bg-[linear-gradient(transparent_50%,#ff0_50%)]">レビュー</span>
+  - <span class="bg-[linear-gradient(transparent_50%,#ff0_50%)]">質問対応/コワークなどのサポート</span>
   - 気になる技術のキャッチアップ
 
 <img src="/undraw_base_work.png" class="w-1/2 fixed right-8 bottom-1/4" />
@@ -85,7 +85,7 @@ layout: image-right
   - JS/TS
   - React <uim-star class="text-yellow-500" />
   - Next.js <uim-star class="text-yellow-500" />
-  - その他周辺ライブラリの話
+  - その他React周辺ライブラリの話
   </div>
 
   <div class="space-y-4">
