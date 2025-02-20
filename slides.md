@@ -106,20 +106,95 @@ layout: image-right
   <div class="space-y-4">
   <uim-rocket class="text-green-600" /> 開発メイン
 
-  - TIP-Extra (file管理/CS)
-  - Cost Pilot
-  
-    <span class="text-gray-500 text-sm">設計者のためのコストプランニングツール</span>
-  - 類似度判定App for 構造設計
-  - 配送システム
+  <div class="flex items-center gap-4">
 
+  - TIP-Extra (file管理/CS)
+  <div class="relative h-6 w-20">
+    <img src="https://github.com/1100220.png" height="24" width="24"
+      class="absolute top-0 left-0 rounded-full border z-40" />
+    <img src="https://github.com/Kouichi-Miyazaki-TODA.png" height="24" width="24"
+      class="absolute top-0 left-4 rounded-full border z-30" />
+    <img src="https://github.com/katou000.png" height="24" width="24"
+      class="absolute top-0 left-8 rounded-full border z-20" />
+    <img src="https://github.com/namidapoo.png" height="24" width="24"
+      class="absolute top-0 left-12 rounded-full border z-10" />
+  </div>
+  </div>
+
+  <div class="flex items-center gap-4">
+
+  - Cost Pilot
+  <div class="relative h-6 w-20">
+    <img src="https://github.com/kokurimoto.png" height="24" width="24"
+      class="absolute top-0 left-0 rounded-full border z-20" />
+    <img src="https://github.com/namidapoo.png" height="24" width="24"
+      class="absolute top-0 left-4 rounded-full border z-10" />
+  </div>
+  </div>
+
+  <div class="flex items-center gap-4">
+
+  - 類似度判定App for 構造設計
+  <div class="relative h-6 w-20">
+    <img src="https://github.com/kokurimoto.png" height="24" width="24"
+      class="absolute top-0 left-0 rounded-full border z-20" />
+    <img src="https://github.com/namidapoo.png" height="24" width="24"
+      class="absolute top-0 left-4 rounded-full border z-10" />
+  </div>
+  </div>
+
+  <div class="flex items-center gap-4">
+
+  - 配送システム
+  <div class="relative h-6 w-20">
+    <img src="https://github.com/shuichitamura.png" height="24" width="24"
+      class="absolute top-0 left-0 rounded-full border z-30" />
+    <img src="https://github.com/ShunyaONO.png" height="24" width="24"
+      class="absolute top-0 left-4 rounded-full border z-20" />
+    <img src="https://github.com/namidapoo.png" height="24" width="24"
+      class="absolute top-0 left-8 rounded-full border z-10" />
+  </div>
+  </div>
+  
   </div>
 
   <div class="space-y-4">
   <uim-comment-dots class="text-green-600" /> レビュー / サポートメイン
 
+  <div class="flex items-center gap-4">
+
   - 高所作業車アプリ
+  <div class="relative h-6 w-20">
+    <img src="https://github.com/kokurimoto.png" height="24" width="24"
+      class="absolute top-0 left-0 rounded-full border z-40" />
+    <img src="https://github.com/ishizuka-dx.png" height="24" width="24"
+      class="absolute top-0 left-4 rounded-full border z-30" />
+    <img src="https://github.com/1170026.png" height="24" width="24"
+      class="absolute top-0 left-8 rounded-full border z-20" />
+    <img src="https://github.com/namidapoo.png" height="24" width="24"
+      class="absolute top-0 left-12 rounded-full border z-10" />
+  </div>
+  </div>
+
+  <div class="flex items-center gap-4">
+
   - ニヤリポ（2期生`DIP`）
+  <div class="relative h-6 w-20">
+    <img src="https://github.com/ishizuka-dx.png" height="24" width="24"
+      class="absolute top-0 left-0 rounded-full border z-60" />
+    <img src="https://github.com/kayano4.png" height="24" width="24"
+      class="absolute top-0 left-4 rounded-full border z-50" />
+    <img src="https://github.com/tdHiru.png" height="24" width="24"
+      class="absolute top-0 left-8 rounded-full border z-40" />
+    <img src="https://github.com/1170026.png" height="24" width="24"
+      class="absolute top-0 left-12 rounded-full border z-30" />
+    <img src="https://github.com/mihoishige.png" height="24" width="24"
+      class="absolute top-0 left-16 rounded-full border z-20" />
+    <img src="https://github.com/namidapoo.png" height="24" width="24"
+      class="absolute top-0 left-20 rounded-full border z-10" />
+  </div>
+  </div>
+
   </div>
 </div>
 
