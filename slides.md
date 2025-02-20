@@ -25,7 +25,6 @@ fonts:
 
 ---
 layout: image-right
-image: /IMG_5575.jpg
 ---
 
 # プロフィール
@@ -41,7 +40,7 @@ image: /IMG_5575.jpg
 - 2019年入社
 - ICT採用
 
-<img src="https://avatars.githubusercontent.com/u/83203852?v=4" class="w-1/2 fixed bottom-10 right-0 scale-50 rounded-full border-24 border-green-300" />
+<img src="/undraw_base_family.png" class="w-1/2 fixed right-8 bottom-1/4" />
 
 ---
 layout: image-right
@@ -56,7 +55,7 @@ layout: image-right
 - 2020年7月〜 本社 / DX推進室
 - 2025年3月〜 本社 / デジタル変革実装室
 
-<img src="/undraw_resume_jrgi.png" class="w-1/2 fixed bottom-1/8 right-8 scale-80" />
+<img src="/undraw_base_history.png" class="w-1/2 fixed bottom-1/8 right-8 scale-80" />
 
 ---
 layout: image-right
@@ -72,7 +71,7 @@ layout: image-right
   - 質問対応/コワークなどのサポート <uim-star class="text-yellow-500" />
   - 気になる技術のキャッチアップ
 
-<img src="/undraw_engineering-team_13ax.png" class="w-1/2 fixed right-8 bottom-1/4" />
+<img src="/undraw_base_work.png" class="w-1/2 fixed right-8 bottom-1/4" />
 
 ---
 
