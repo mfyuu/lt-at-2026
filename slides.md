@@ -11,9 +11,9 @@ transition: slide-left
 # enable MDC Syntax: https://sli.dev/features/mdc
 mdc: true
 fonts:
-  sans: Noto Sans JP
+  sans: UDEV Gothic 35JPDOC
   serif: Noto Serif JP
-  mono: Fira Code
+  mono: UDEV Gothic 35JPDOC
 ---
 
 # Lightning Talks
