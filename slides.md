@@ -69,7 +69,13 @@ layout: image-right
   - 開発
   - <span class="bg-[linear-gradient(transparent_50%,#ff0_50%)]">レビュー</span>
   - <span class="bg-[linear-gradient(transparent_50%,#ff0_50%)]">質問対応/コワークなどのサポート</span>
+  - <span class="bg-[linear-gradient(transparent_50%,#ff0_50%)]">勉強会の開催</span>
+    - Next.js Official Docs
+    - JavaScriptの非同期処理
   - 気になる技術のキャッチアップ
+    - フロントエンドのUIテスト
+      - Storybook, Praywright, ...
+    - React Router v7 (旧Remix)
 
 <img src="/undraw_base_work.png" class="w-1/2 fixed right-8 bottom-1/4" />
 
@@ -150,6 +156,19 @@ layout: image-right
     <img src="https://github.com/shuichitamura.png" height="24" width="24"
       class="absolute top-0 left-0 rounded-full border z-30" />
     <img src="https://github.com/ShunyaONO.png" height="24" width="24"
+      class="absolute top-0 left-4 rounded-full border z-20" />
+    <img src="https://github.com/namidapoo.png" height="24" width="24"
+      class="absolute top-0 left-8 rounded-full border z-10" />
+  </div>
+  </div>
+
+  <div class="flex items-center gap-4">
+
+  - 工程表管理アプリ
+  <div class="relative h-6 w-20">
+    <img src="https://github.com/mihoishige.png" height="24" width="24"
+      class="absolute top-0 left-0 rounded-full border z-30" />
+    <img src="https://github.com/kokurimoto.png" height="24" width="24"
       class="absolute top-0 left-4 rounded-full border z-20" />
     <img src="https://github.com/namidapoo.png" height="24" width="24"
       class="absolute top-0 left-8 rounded-full border z-10" />
