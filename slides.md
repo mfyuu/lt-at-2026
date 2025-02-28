@@ -1,6 +1,6 @@
 ---
 theme: seriph
-background: https://cover.sli.dev
+background: /bg-toda-blur-10.png
 # some information about your slides (markdown enabled)
 title: lt at 2025
 # https://sli.dev/features/drawing
