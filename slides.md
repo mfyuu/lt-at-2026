@@ -74,8 +74,7 @@ layout: image-right
     - JavaScriptの非同期処理
   - 気になる技術のキャッチアップ
     - フロントエンドのUIテスト
-      - Storybook, Praywright, ...
-    - React Router v7 (旧Remix)
+    - React Router v7 (Remix)
 
 <img src="/undraw_base_work.png" class="w-1/2 fixed right-8 bottom-1/4" />
 
