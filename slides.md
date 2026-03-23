@@ -2,7 +2,7 @@
 theme: seriph
 background: /bg-toda-blur-10.png
 # some information about your slides (markdown enabled)
-title: lt at 2025
+title: lt at 2026
 # https://sli.dev/features/drawing
 drawings:
   persist: false
@@ -19,7 +19,7 @@ fonts:
 # Lightning Talks
 
 <div class="fixed bottom-4 right-8 text-right">
-    <p>2025-03-03</p>
+    <p>2026-03-31</p>
     <p>kazuya suzuki</p>
 </div>
 
@@ -35,7 +35,7 @@ layout: image-right
 
 <div class="h-2" />
 
-- 27歳/AB型
+- 29歳/AB型
 - 2019年入社
 - ICT採用
 - 2人+1匹暮らし
