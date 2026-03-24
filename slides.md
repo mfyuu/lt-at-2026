@@ -1,14 +1,10 @@
 ---
 theme: seriph
 background: /bg-toda-blur-10.png
-# some information about your slides (markdown enabled)
 title: lt at 2026
-# https://sli.dev/features/drawing
 drawings:
   persist: false
-# slide transition: https://sli.dev/guide/animations.html#slide-transitions
 transition: slide-left
-# enable MDC Syntax: https://sli.dev/features/mdc
 mdc: true
 fonts:
   sans: UDEV Gothic 35JPDOC
@@ -67,9 +63,9 @@ layout: image-right
 
 - フロントエンド領域
   - 開発
-  - <span class="bg-[linear-gradient(transparent_50%,#ff0_50%)]">レビュー</span>
-  - <span class="bg-[linear-gradient(transparent_50%,#ff0_50%)]">質問対応/コワークなどのサポート</span>
-  - <span class="bg-[linear-gradient(transparent_50%,#ff0_50%)]">勉強会の開催</span>
+  - <span class="highlight">レビュー</span>
+  - <span class="highlight">質問対応/コワークなどのサポート</span>
+  - <span class="highlight">勉強会の開催</span>
     - Next.js Official Docs
     - JavaScriptの非同期処理
   - 気になる技術のキャッチアップ
@@ -108,112 +104,26 @@ layout: image-right
 
 <div class="h-8" />
 <div class="grid grid-cols-2">
-  <div class="space-y-4">
-  <uim-rocket class="text-green-600" /> 開発メイン
+  <ProjectList :projects="[
+    { name: 'TIP-Extra (file管理/CS)', users: ['mfyuu', 'katou000'] },
+    { name: 'TIP-Extra (全件リプレイス)', users: ['mfyuu', 'katou000', 'mihoishige'] },
+    { name: 'Cost Pilot', users: ['kokurimoto', 'mfyuu'] },
+    { name: 'Booklift', users: ['kokurimoto', 'mfyuu', 'Yu2ki-TDX', 'ShunyaONO'] },
+    { name: 'Koutei', users: ['mihoishige', 'kokurimoto', 'mfyuu'] },
+    { name: '配送システム', users: ['shuichitamura', 'mfyuu', 'katou000', 'ShunyaONO'] },
+  ]">
+    <template #header>
+      <div><uim-rocket class="text-green-600" /> 開発メイン</div>
+    </template>
+  </ProjectList>
 
-  <div class="flex items-center gap-4">
-
-  - TIP-Extra (file管理/CS)
-  <div class="relative h-6 w-20">
-    <img src="https://github.com/1100220.png" height="24" width="24"
-      class="absolute top-0 left-0 rounded-full border z-40" />
-    <img src="https://github.com/Kouichi-Miyazaki-TODA.png" height="24" width="24"
-      class="absolute top-0 left-4 rounded-full border z-30" />
-    <img src="https://github.com/katou000.png" height="24" width="24"
-      class="absolute top-0 left-8 rounded-full border z-20" />
-    <img src="https://github.com/namidapoo.png" height="24" width="24"
-      class="absolute top-0 left-12 rounded-full border z-10" />
-  </div>
-  </div>
-
-  <div class="flex items-center gap-4">
-
-  - Cost Pilot
-  <div class="relative h-6 w-20">
-    <img src="https://github.com/kokurimoto.png" height="24" width="24"
-      class="absolute top-0 left-0 rounded-full border z-20" />
-    <img src="https://github.com/namidapoo.png" height="24" width="24"
-      class="absolute top-0 left-4 rounded-full border z-10" />
-  </div>
-  </div>
-
-  <div class="flex items-center gap-4">
-
-  - 類似度判定App for 構造設計
-  <div class="relative h-6 w-20">
-    <img src="https://github.com/kokurimoto.png" height="24" width="24"
-      class="absolute top-0 left-0 rounded-full border z-20" />
-    <img src="https://github.com/namidapoo.png" height="24" width="24"
-      class="absolute top-0 left-4 rounded-full border z-10" />
-  </div>
-  </div>
-
-  <div class="flex items-center gap-4">
-
-  - 配送システム
-  <div class="relative h-6 w-20">
-    <img src="https://github.com/shuichitamura.png" height="24" width="24"
-      class="absolute top-0 left-0 rounded-full border z-30" />
-    <img src="https://github.com/ShunyaONO.png" height="24" width="24"
-      class="absolute top-0 left-4 rounded-full border z-20" />
-    <img src="https://github.com/namidapoo.png" height="24" width="24"
-      class="absolute top-0 left-8 rounded-full border z-10" />
-  </div>
-  </div>
-
-  <div class="flex items-center gap-4">
-
-  - 工程表管理アプリ
-  <div class="relative h-6 w-20">
-    <img src="https://github.com/mihoishige.png" height="24" width="24"
-      class="absolute top-0 left-0 rounded-full border z-30" />
-    <img src="https://github.com/kokurimoto.png" height="24" width="24"
-      class="absolute top-0 left-4 rounded-full border z-20" />
-    <img src="https://github.com/namidapoo.png" height="24" width="24"
-      class="absolute top-0 left-8 rounded-full border z-10" />
-  </div>
-  </div>
-  
-  </div>
-
-  <div class="space-y-4">
-  <uim-comment-dots class="text-green-600" /> レビュー / サポートメイン
-
-  <div class="flex items-center gap-4">
-
-  - 高所作業車アプリ
-  <div class="relative h-6 w-20">
-    <img src="https://github.com/kokurimoto.png" height="24" width="24"
-      class="absolute top-0 left-0 rounded-full border z-40" />
-    <img src="https://github.com/ishizuka-dx.png" height="24" width="24"
-      class="absolute top-0 left-4 rounded-full border z-30" />
-    <img src="https://github.com/1170026.png" height="24" width="24"
-      class="absolute top-0 left-8 rounded-full border z-20" />
-    <img src="https://github.com/namidapoo.png" height="24" width="24"
-      class="absolute top-0 left-12 rounded-full border z-10" />
-  </div>
-  </div>
-
-  <div class="flex items-center gap-4">
-
-  - ニヤリポ（2期生`DIP`）
-  <div class="relative h-6 w-20">
-    <img src="https://github.com/ishizuka-dx.png" height="24" width="24"
-      class="absolute top-0 left-0 rounded-full border z-60" />
-    <img src="https://github.com/kayano4.png" height="24" width="24"
-      class="absolute top-0 left-4 rounded-full border z-50" />
-    <img src="https://github.com/tdHiru.png" height="24" width="24"
-      class="absolute top-0 left-8 rounded-full border z-40" />
-    <img src="https://github.com/1170026.png" height="24" width="24"
-      class="absolute top-0 left-12 rounded-full border z-30" />
-    <img src="https://github.com/mihoishige.png" height="24" width="24"
-      class="absolute top-0 left-16 rounded-full border z-20" />
-    <img src="https://github.com/namidapoo.png" height="24" width="24"
-      class="absolute top-0 left-20 rounded-full border z-10" />
-  </div>
-  </div>
-
-  </div>
+  <ProjectList :projects="[
+    { name: 'ニヤリポ（2期生DIP）', users: ['ishizuka-dx', 'kayano4', 'tdHiru', 'tdShiori', 'mihoishige', 'mfyuu'] },
+  ]">
+    <template #header>
+      <div><uim-comment-dots class="text-green-600" /> レビュー / サポートメイン</div>
+    </template>
+  </ProjectList>
 </div>
 
 ---
