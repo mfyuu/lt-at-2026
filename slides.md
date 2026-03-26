@@ -194,11 +194,11 @@ layout: image-right
   <div v-for="tool in [
     { icon: '/services/mac-os.svg', name: 'macOS', cat: 'OS', desc: '' },
     { icon: '/services/cursor.png', name: 'Cursor', cat: 'エディタ', desc: '' },
-    { icon: '/services/ghostty.svg', name: 'Ghostty', cat: 'ターミナル', desc: '高速・軽量' },
-    { icon: '/services/claude.svg', name: 'Claude Code', cat: 'AI エージェント', desc: 'CodexやCopilotも少々' },
+    { icon: '/services/ghostty.svg', name: 'Ghostty', cat: 'ターミナル', desc: 'GPU描画で高速・軽量' },
+    { icon: '/services/claude.svg', name: 'Claude Code', cat: 'AIエージェント', desc: 'CodexやCopilotも少々' },
     { icon: '/services/hhkb.svg', name: 'HHKB', cat: 'キーボード', desc: '今はmoNa2に興味ある' },
     { icon: '/services/fonts.png', name: 'Udev Gothic', cat: 'フォント', desc: 'BIZ UDゴシック + JetBrains Mono' },
-    { icon: '/services/clean-shot-x.png', name: 'CleanShot X', cat: 'キャプチャ', desc: 'macOSなら一択' },
+    { icon: '/services/clean-shot-x.png', name: 'CleanShot X', cat: 'スクショ / 録画', desc: 'macOSなら一択' },
     { icon: '/services/run-cat.png', name: 'RunCat', cat: 'システム監視', desc: '猫が走っててかわいい' },
     { icon: '/services/auto-raise.png', name: 'AutoRaise', cat: 'ウィンドウ管理', desc: 'ホバーでウィンドウ切替' },
   ]" :key="tool.name" class="flex items-center gap-2 px-2 py-4 rounded-lg bg-white/5 border border-white/10">
