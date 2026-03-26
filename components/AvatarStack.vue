@@ -15,7 +15,7 @@ defineProps<{
       :src="`https://github.com/${user}.png`"
       height="24"
       width="24"
-      class="absolute top-0 rounded-full border"
+      class="absolute top-0 rounded-full border bg-white"
       :style="{
         left: `${i * 16}px`,
         zIndex: (users.length - i) * 10,

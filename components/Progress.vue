@@ -24,10 +24,12 @@ const style = computed(() => {
 <template>
   <div class="absolute z-50 bottom-5 left-0 right-0 flex justify-center">
     <div
-      class="w-150 relative h-2 bg-green-500/50 rounded-full overflow-hidden"
+      class="w-150 relative h-2 rounded-full overflow-hidden"
+      style="background-color: rgba(51, 84, 187, 0.3)"
     >
       <span
-        class="absolute h-full bg-gray-500 transition-all duration-300 rounded-full"
+        class="absolute h-full transition-all duration-300 rounded-full"
+        style="background-color: #3354BB"
         :style="style"
       ></span>
     </div>

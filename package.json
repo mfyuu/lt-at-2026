@@ -9,6 +9,7 @@
     "deploy": "slidev build && wrangler pages deploy"
   },
   "dependencies": {
+    "@iconify-json/mdi": "^1.2.3",
     "@iconify-json/uim": "1.2.3",
     "@slidev/cli": "51.8.2",
     "@slidev/theme-default": "latest",
