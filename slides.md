@@ -59,7 +59,7 @@ layout: image-right
 
 <div class="flex items-center justify-center gap-12 h-4/5">
   <PhotoMagazine src="/cat_1.jpg" caption="アメリカンショートヘア" />
-  <PhotoMagazine src="/cat_2.jpg" caption="先日(3/18)で3歳になった" />
+  <PhotoMagazine src="/cat_2.png" caption="先日(3/18)で3歳になった" />
 </div>
 
 ---
