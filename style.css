@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: "UDEV Gothic 35JPDOC";
-  src: url("/UDEVGothic35JPDOC-Regular.ttf") format("truetype");
+  src: url("/fonts/UDEVGothic35JPDOC-Regular.ttf") format("truetype");
 }
 
 .slidev-layout blockquote p {

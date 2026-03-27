@@ -1,6 +1,6 @@
 ---
 theme: seriph
-background: /bg-toda-blur-10.png
+background: /bg/bg-toda-blur-10.png
 title: lt at 2026
 drawings:
   persist: false
@@ -36,7 +36,7 @@ layout: image-right
 - ICT採用
 - 2人+1匹暮らし
 
-<img src="/undraw_swipe-profiles.svg" class="w-1/2 fixed right-8 bottom-1/4" />
+<img src="/illustrations/undraw_swipe-profiles.svg" class="w-1/2 fixed right-8 bottom-1/4" />
 
 ---
 layout: image-right
@@ -51,15 +51,15 @@ layout: image-right
 - 2020年7月〜 本社 / DX推進室
 - 2025年3月〜 本社 / デジタル変革実装室
 
-<img src="/undraw_tabs.svg" class="w-1/2 fixed bottom-1/8 right-8 scale-80" />
+<img src="/illustrations/undraw_tabs.svg" class="w-1/2 fixed bottom-1/8 right-8 scale-80" />
 
 ---
 
 # 犬より猫派
 
 <div class="flex items-center justify-center gap-12 h-4/5">
-  <PhotoMagazine src="/cat_1.jpg" caption="アメリカンショートヘア" />
-  <PhotoMagazine src="/cat_2.png" caption="先日(3/18)で3歳になった" />
+  <PhotoMagazine src="/photos/cat_1.jpg" caption="アメリカンショートヘア" />
+  <PhotoMagazine src="/photos/cat_2.png" caption="先日(3/18)で3歳になった" />
 </div>
 
 ---
@@ -93,7 +93,7 @@ layout: image-right
   - 技術のキャッチアップ
 
 </div>
-<div class="col-span-3 bg-contain bg-center bg-no-repeat" style="background-image: url('/CleanShot 2026-03-26 at 15.09.59@2x.png')" />
+<div class="col-span-3 bg-contain bg-center bg-no-repeat" style="background-image: url('/screenshots/daily-work.png')" />
 </div>
 
 
@@ -179,8 +179,9 @@ layout: image-right
   </div>
 
   <div class="space-y-4">
-    <mdi-help class="text-red-400" /> <span class="text-lg">他の人に聞く方がいい</span>
+    <mdi-help class="text-red-400" /> <span class="text-lg">他の人に聞いた方が速い</span>
 
+  - Python
   - インフラ / DB設計
   - 社内調整など
   </div>
@@ -197,7 +198,7 @@ layout: image-right
     { icon: '/services/cursor.png', name: 'Cursor', cat: 'エディタ', desc: '' },
     { icon: '/services/fonts.png', name: 'Udev Gothic NFLG', cat: 'フォント', desc: 'BIZ UDゴシック + JetBrains Mono' },
     { icon: '/services/claude.svg', name: 'Claude Code', cat: 'AIエージェント', desc: 'CodexやCopilotも少々' },
-    { icon: '/services/slidev.svg', name: 'Slidev', cat: 'スライド作成', desc: 'Markdownで書ける' },
+    { icon: '/services/slidev.svg', name: 'Slidev', cat: 'スライド作成', desc: 'Markdown +αで書ける' },
     { icon: '/services/clean-shot-x.png', name: 'CleanShot X', cat: 'スクショ / 録画', desc: 'macOSなら一択' },
     { icon: '/services/run-cat.png', name: 'RunCat', cat: 'システム監視', desc: '猫が走っててかわいい' },
     { icon: '/services/auto-raise.png', name: 'AutoRaise', cat: 'ウィンドウ管理', desc: 'ホバーでウィンドウ切替' },
@@ -213,6 +214,12 @@ layout: image-right
 
 <div class="my-8
 ">気になるものあれば調べてみてください</div>
+---
+layout: image
+image: /screenshots/github-repo.png
+backgroundSize: contain
+---
+
 ---
 layout: center
 ---
