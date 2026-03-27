@@ -99,6 +99,40 @@ layout: image-right
 
 ---
 
+# 得意領域/苦手領域
+
+<div class="h-6" />
+<div class="flex gap-12">
+  <div class="space-y-4">
+    <mdi-check-all class="text-blue-500" /> <span class="text-lg">得意</span>
+
+  - JS/TS <mdi-star class="text-yellow-500" />
+  - React <mdi-star class="text-yellow-500" />
+  - Next.js <mdi-star class="text-yellow-500" />
+  - SSRの認証実装
+  - React周辺ライブラリ
+  </div>
+
+  <div class="space-y-4">
+    <mdi-check class="text-green-500" /> <span class="text-lg">サポートできる</span>
+
+  - Vue
+  - Svelte
+  - Tanstack Start
+  - Hono(OpenAPI連携など)
+  </div>
+
+  <div class="space-y-4">
+    <mdi-help class="text-red-400" /> <span class="text-lg">他の人に聞いた方が速い</span>
+
+  - Python
+  - インフラ / DB設計
+  - 社内調整など
+  </div>
+</div>
+
+---
+
 # 参加プロジェクト
 
 <div class="h-8" />
@@ -152,40 +186,6 @@ layout: image-right
   { label: 'Niyarepo', value: 3, color: '#ec4899' },
   { label: 'Make-Minutes', value: 1, color: '#6b7280' },
 ]" />
-
----
-
-# 得意領域/苦手領域
-
-<div class="h-6" />
-<div class="flex gap-12">
-  <div class="space-y-4">
-    <mdi-check-all class="text-blue-500" /> <span class="text-lg">得意</span>
-
-  - JS/TS <mdi-star class="text-yellow-500" />
-  - React <mdi-star class="text-yellow-500" />
-  - Next.js <mdi-star class="text-yellow-500" />
-  - SSRの認証実装
-  - React周辺ライブラリ
-  </div>
-
-  <div class="space-y-4">
-    <mdi-check class="text-green-500" /> <span class="text-lg">サポートできる</span>
-
-  - Vue
-  - Svelte
-  - Tanstack Start
-  - Hono(OpenAPI連携など)
-  </div>
-
-  <div class="space-y-4">
-    <mdi-help class="text-red-400" /> <span class="text-lg">他の人に聞いた方が速い</span>
-
-  - Python
-  - インフラ / DB設計
-  - 社内調整など
-  </div>
-</div>
 
 ---
 
