@@ -138,40 +138,21 @@ layout: image-right
 ---
 
 # 参加プロジェクト
-
-<div class="h-8" />
-<div class="grid grid-cols-2">
+<p class="text-sm">フロントエンド領域を中心に 開発 / レビュー / コワークなどのサポート<br />一部バックエンド領域も担当</p>
+<div class="h-4" />
+<div class="grid grid-cols-2 gap-x-4 gap-y-8">
   <ProjectList :projects="[
     { name: 'TIP-Extra (ファイル管理/CS)', users: ['Yasuki-Satou-TODA', '1100220', 'Kouichi-Miyazaki-TODA', 'mfyuu', 'katou000'] },
     { name: 'TIP-Extra (全件リプレイス)', users: ['Yasuki-Satou-TODA', '1100220', 'Kouichi-Miyazaki-TODA', 'm-furuno', 'mfyuu', 'katou000', 'mihoishige'] },
     { name: 'Cost Pilot', users: ['kokurimoto', 'mfyuu'] },
     { name: 'Booklift', users: ['kokurimoto', 'mfyuu', 'Yu2ki-TDX', 'ShunyaONO'] },
+  ]" />
+  <ProjectList :projects="[
     { name: 'Koutei', users: ['mihoishige', 'kokurimoto', 'mfyuu'] },
     { name: '配送システム', users: ['shuichitamura', 'mfyuu', 'katou000', 'ShunyaONO'] },
-  ]">
-    <template #header>
-      <div><uim-rocket style="color: #3354BB" /> 開発メイン</div>
-    </template>
-  </ProjectList>
-
-  <div>
-    <ProjectList :projects="[
-      { name: 'ニヤリポ（2期生DIP）', users: ['ishizuka-dx', 'kayano4', 'tdHiru', 'tdShiori', 'mihoishige', 'mfyuu'] },
-    ]">
-      <template #header>
-        <div><uim-comment-dots style="color: #3354BB" /> レビュー / サポートメイン</div>
-      </template>
-    </ProjectList>
-    <div class="h-8" />
-    <ProjectList :projects="[
-      { name: 'Frontend Meetup（有志勉強会）', users: ['mfyuu', 'tdShiori', 'tdHiru', 'ishizuka-dx'] },
-    ]">
-      <template #header>
-          <uim-user-arrows style="color: #3354BB" />
-          その他
-      </template>
-    </ProjectList>
-  </div>
+    { name: 'ニヤリポ（2期生DIP）', users: ['ishizuka-dx', 'kayano4', 'tdHiru', 'tdShiori', 'mihoishige', 'mfyuu'] },
+    { name: 'Frontend Meetup（有志勉強会）', users: ['mfyuu', 'tdShiori', 'tdHiru', 'ishizuka-dx'] },
+  ]" />
 </div>
 
 ---
