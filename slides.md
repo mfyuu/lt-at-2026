@@ -116,6 +116,12 @@ layout: image-right
 </div>
 
 ---
+layout: image
+image: /screenshots/pr-before-after.png
+backgroundSize: contain
+---
+
+---
 
 # デザイン
 
