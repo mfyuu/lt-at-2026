@@ -254,10 +254,10 @@ backgroundSize: contain
 # ちょっと前にハマってたこと
 
 <div class="grid grid-cols-2 gap-4 mt-2" style="height: 400px">
-  <div class="flex flex-col gap-16">
+  <div class="flex flex-col gap-10">
     <div class="bg-white/5 border border-white/10 rounded-lg p-4">
       <div class="text-lg font-bold mb-2"><mdi-console-line class="text-green-400" /> シェルの起動速度チューニング</div>
-      <p class="text-sm opacity-80">zshの起動時間を定点観測しながらチューニング。<br />プラグインの遅延読み込みやキャッシュの活用とか。</p>
+      <p class="text-sm opacity-80">ターミナルを開いてからコマンドが打てるようになるまでの時間を短縮。<br />プラグインの遅延読み込みやキャッシュの活用で定点観測しながらチューニング。<br />0.3s → 0.03s（x10）</p>
     </div>
     <div class="bg-white/5 border border-white/10 rounded-lg p-4">
       <div class="text-lg font-bold mb-2"><mdi-github class="text-purple-400" /> GitHubのプロフィール</div>
