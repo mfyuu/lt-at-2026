@@ -177,7 +177,7 @@ layout: image-right
 ---
 
 # 業務割合
-<p class="text-sm">ここ半年くらいのざっくり</p>
+<p class="text-sm">直近4ヶ月くらいのざっくり</p>
 <div class="h-4" />
 
 <PieChart variant="percent" :segments="[
