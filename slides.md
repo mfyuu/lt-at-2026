@@ -204,6 +204,12 @@ backgroundSize: contain
 </div>
 
 ---
+layout: image
+image: /screenshots/tip-extra-dev.png
+backgroundSize: contain
+---
+
+---
 
 # 業務割合
 <p class="text-sm">直近4ヶ月くらいのざっくり</p>
