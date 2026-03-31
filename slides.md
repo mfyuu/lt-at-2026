@@ -198,8 +198,8 @@ layout: image-right
 <div class="grid grid-cols-3 mt-4">
   <div v-for="tool in [
     { icon: '/services/mac-os.svg', name: 'macOS', cat: 'OS', desc: '' },
+    { icon: '/services/arc.svg', name: 'Arc', cat: 'ブラウザ', desc: 'Chrome → Brave → Arc' },
     { icon: '/services/ghostty.svg', name: 'Ghostty', cat: 'ターミナル', desc: 'GPU描画で高速・軽量' },
-    { icon: '/services/cursor.png', name: 'Cursor', cat: 'エディタ', desc: '' },
     { icon: '/services/fonts.png', name: 'Udev Gothic NFLG', cat: 'フォント', desc: 'BIZ UDゴシック + JetBrains Mono' },
     { icon: '/services/claude.svg', name: 'Claude Code', cat: 'AIエージェント', desc: 'CodexやCopilotも少々' },
     { icon: '/services/slidev.svg', name: 'Slidev', cat: 'スライド作成', desc: 'Markdown +αで書ける' },
