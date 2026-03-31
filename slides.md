@@ -180,7 +180,7 @@ layout: image-right
 <p class="text-sm">ここ半年くらいのざっくり</p>
 <div class="h-4" />
 
-<PieChart :segments="[
+<PieChart variant="percent" :segments="[
   { label: 'TIP-Extra (ファイル管理/CS/全リプレイス)', value: 60, color: '#3b82f6' },
   { label: 'Koutei', value: 14, color: '#22c55e' },
   { label: 'Booklift', value: 10, color: '#ef4444' },

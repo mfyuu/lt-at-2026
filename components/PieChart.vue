@@ -12,7 +12,11 @@ const props = defineProps<{
   size?: number;
   unit?: string;
   hideLegend?: boolean;
+  /** "percent" = 旧スタイル（グラフ内に%表示）, "label" = 現スタイル（ラベル+引き出し線） */
+  variant?: "percent" | "label";
 }>();
+
+const variant = computed(() => props.variant ?? "label");
 
 const chartSize = computed(() => props.size ?? 280);
 const margin = computed(() => (props.unit === "h" ? 40 : 0));
@@ -58,7 +62,10 @@ const paths = computed(() => {
 
     const midRad = ((startAngle + endAngle) / 2) * (Math.PI / 180);
     const isSmall = angle < 10;
-    const labelRadius = isSmall ? radius.value + 30 : radius.value * 0.65;
+
+    const labelRadius = variant.value === "percent"
+      ? radius.value * 0.65
+      : isSmall ? radius.value + 30 : radius.value * 0.65;
     const labelX = center.value + labelRadius * Math.cos(midRad);
     const labelY = center.value + labelRadius * Math.sin(midRad);
 
@@ -71,16 +78,19 @@ const paths = computed(() => {
       y: center.value + (radius.value + 20) * Math.sin(midRad),
     };
 
+    const showLabel = variant.value === "percent" ? segment.value >= 5 : true;
+
     return {
       ...segment,
       d: `M ${center.value} ${center.value} L ${x1} ${y1} A ${radius.value} ${radius.value} 0 ${largeArc} 1 ${x2} ${y2} Z`,
       labelX,
       labelY,
-      fontSize: 10,
+      fontSize: variant.value === "percent" ? 4 : 10,
       isSmall,
       leaderStart,
       leaderEnd,
-      textAnchor: isSmall ? (Math.cos(midRad) >= 0 ? 'start' : 'end') : 'middle',
+      textAnchor: variant.value === "percent" ? 'middle' as const : isSmall ? (Math.cos(midRad) >= 0 ? 'start' as const : 'end' as const) : 'middle' as const,
+      showLabel,
     };
   });
 });
@@ -112,28 +122,30 @@ const paths = computed(() => {
         {{ m.hour }}
       </text>
       <template v-for="(p, i) in paths" :key="'label-' + i">
-        <line
-          v-if="p.isSmall"
-          :x1="p.leaderStart.x"
-          :y1="p.leaderStart.y"
-          :x2="p.leaderEnd.x"
-          :y2="p.leaderEnd.y"
-          stroke="currentColor"
-          stroke-width="0.5"
-          opacity="0.6"
-        />
-        <text
-          :x="p.labelX"
-          :y="p.labelY"
-          :text-anchor="p.textAnchor"
-          dominant-baseline="central"
-          :fill="p.isSmall ? 'currentColor' : 'white'"
-          :font-size="p.fontSize"
-          :font-weight="p.isSmall ? 'normal' : 'bold'"
-          :class="p.isSmall ? '' : 'drop-shadow'"
-        >
-          {{ p.label }}
-        </text>
+        <template v-if="p.showLabel">
+          <line
+            v-if="variant === 'label' && p.isSmall"
+            :x1="p.leaderStart.x"
+            :y1="p.leaderStart.y"
+            :x2="p.leaderEnd.x"
+            :y2="p.leaderEnd.y"
+            stroke="currentColor"
+            stroke-width="0.5"
+            opacity="0.6"
+          />
+          <text
+            :x="p.labelX"
+            :y="p.labelY"
+            :text-anchor="p.textAnchor"
+            dominant-baseline="central"
+            :fill="variant === 'label' && p.isSmall ? 'currentColor' : 'white'"
+            :font-size="p.fontSize"
+            :font-weight="variant === 'label' && p.isSmall ? 'normal' : 'bold'"
+            :class="variant === 'label' && p.isSmall ? '' : 'drop-shadow'"
+          >
+            {{ variant === 'percent' ? `${p.value}%` : p.label }}
+          </text>
+        </template>
       </template>
     </svg>
     <div v-if="!hideLegend" class="flex flex-col justify-between h-full py-2" style="min-height: 280px">
