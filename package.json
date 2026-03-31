@@ -5,7 +5,8 @@
   "scripts": {
     "build": "slidev build",
     "dev": "slidev --open",
-    "export": "slidev export",
+    "export": "slidev export --output out/slides",
+    "export:pptx": "slidev export --format pptx --output out/slides",
     "deploy": "slidev build && wrangler pages deploy"
   },
   "dependencies": {
@@ -17,6 +18,7 @@
     "vue": "3.5.30"
   },
   "devDependencies": {
+    "playwright-chromium": "^1.58.2",
     "wrangler": "3.114.17"
   }
 }
