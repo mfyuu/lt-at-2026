@@ -10,11 +10,32 @@ interface Segment {
 const props = defineProps<{
   segments: Segment[];
   size?: number;
+  unit?: string;
+  hideLegend?: boolean;
 }>();
 
-const size = computed(() => props.size ?? 280);
+const chartSize = computed(() => props.size ?? 280);
+const margin = computed(() => (props.unit === "h" ? 40 : 0));
+const size = computed(() => chartSize.value + margin.value * 2);
 const center = computed(() => size.value / 2);
-const radius = computed(() => size.value / 2 - 10);
+const radius = computed(() => chartSize.value / 2 - 10);
+
+const clockMarks = computed(() => {
+  if (props.unit !== "h") return [];
+  const total = props.segments.reduce((sum, s) => sum + s.value, 0);
+  const marks = [];
+  for (let h = 0; h < total; h++) {
+    const angle = -90 + (h / total) * 360;
+    const rad = (angle * Math.PI) / 180;
+    const labelR = radius.value + 16;
+    marks.push({
+      hour: h,
+      x: center.value + labelR * Math.cos(rad),
+      y: center.value + labelR * Math.sin(rad),
+    });
+  }
+  return marks;
+});
 
 const paths = computed(() => {
   const total = props.segments.reduce((sum, s) => sum + s.value, 0);
@@ -36,16 +57,30 @@ const paths = computed(() => {
     const largeArc = angle > 180 ? 1 : 0;
 
     const midRad = ((startAngle + endAngle) / 2) * (Math.PI / 180);
-    const labelRadius = radius.value * 0.65;
+    const isSmall = angle < 10;
+    const labelRadius = isSmall ? radius.value + 30 : radius.value * 0.65;
     const labelX = center.value + labelRadius * Math.cos(midRad);
     const labelY = center.value + labelRadius * Math.sin(midRad);
+
+    const leaderStart = {
+      x: center.value + (radius.value * 0.85) * Math.cos(midRad),
+      y: center.value + (radius.value * 0.85) * Math.sin(midRad),
+    };
+    const leaderEnd = {
+      x: center.value + (radius.value + 20) * Math.cos(midRad),
+      y: center.value + (radius.value + 20) * Math.sin(midRad),
+    };
 
     return {
       ...segment,
       d: `M ${center.value} ${center.value} L ${x1} ${y1} A ${radius.value} ${radius.value} 0 ${largeArc} 1 ${x2} ${y2} Z`,
       labelX,
       labelY,
-      showLabel: segment.value >= 5,
+      fontSize: 10,
+      isSmall,
+      leaderStart,
+      leaderEnd,
+      textAnchor: isSmall ? (Math.cos(midRad) >= 0 ? 'start' : 'end') : 'middle',
     };
   });
 });
@@ -63,23 +98,45 @@ const paths = computed(() => {
         stroke-width="2"
         class="transition-all duration-500"
       />
+      <text
+        v-for="m in clockMarks"
+        :key="'clock-' + m.hour"
+        :x="m.x"
+        :y="m.y"
+        text-anchor="middle"
+        dominant-baseline="central"
+        fill="currentColor"
+        font-size="4"
+        opacity="0.5"
+      >
+        {{ m.hour }}
+      </text>
       <template v-for="(p, i) in paths" :key="'label-' + i">
+        <line
+          v-if="p.isSmall"
+          :x1="p.leaderStart.x"
+          :y1="p.leaderStart.y"
+          :x2="p.leaderEnd.x"
+          :y2="p.leaderEnd.y"
+          stroke="currentColor"
+          stroke-width="0.5"
+          opacity="0.6"
+        />
         <text
-          v-if="p.showLabel"
           :x="p.labelX"
           :y="p.labelY"
-          text-anchor="middle"
+          :text-anchor="p.textAnchor"
           dominant-baseline="central"
-          fill="white"
-          font-size="4"
-          font-weight="bold"
-          class="drop-shadow"
+          :fill="p.isSmall ? 'currentColor' : 'white'"
+          :font-size="p.fontSize"
+          :font-weight="p.isSmall ? 'normal' : 'bold'"
+          :class="p.isSmall ? '' : 'drop-shadow'"
         >
-          {{ p.value }}%
+          {{ p.label }}
         </text>
       </template>
     </svg>
-    <div class="flex flex-col justify-between h-full py-2" style="min-height: 280px">
+    <div v-if="!hideLegend" class="flex flex-col justify-between h-full py-2" style="min-height: 280px">
       <div
         v-for="(s, i) in segments"
         :key="i"
@@ -91,9 +148,10 @@ const paths = computed(() => {
         />
         <span class="text-base whitespace-nowrap"
           >{{ s.label }}
-          <span class="text-gray-400 ml-1">{{ s.value }}%</span></span
+          <span class="text-gray-400 ml-1">{{ s.value }}{{ unit ?? '%' }}</span></span
         >
       </div>
     </div>
+    <slot v-else />
   </div>
 </template>

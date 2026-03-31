@@ -83,6 +83,26 @@ layout: image-right
 
 ---
 
+# デザイン
+
+<div class="grid grid-cols-5 gap-4 h-4/5 place-content-center">
+  <div class="col-span-3 grid grid-cols-2 gap-4">
+    <div v-for="item in [
+      { src: '/designs/icon.png', caption: 'くろねこイラスト' },
+      { src: '/designs/dx-leader.png', caption: 'DX Leader バッジ' },
+      { src: '/designs/koutei.png', caption: 'Koutei アイコン' },
+      { src: '/designs/biimo.png', caption: 'BiiMo ロゴ' },
+    ]" :key="item.src" class="flex items-center justify-center">
+      <img :src="item.src" class="h-28 rounded-lg object-contain" />
+    </div>
+  </div>
+  <div class="col-span-2 flex items-center justify-center my-auto">
+    <img src="/designs/hiyarepo-poster.png" class="rounded-lg object-contain h-80" />
+  </div>
+</div>
+
+---
+
 # 得意領域/苦手領域
 
 <div class="h-6" />
@@ -198,11 +218,57 @@ layout: image-right
 
 <div class="my-8
 ">気になるものあれば調べてみてください</div>
+
 ---
 layout: image
 image: /screenshots/github-repo.png
 backgroundSize: contain
 ---
+
+---
+
+# 休日の過ごし方
+
+<div class="grid grid-cols-[auto_1fr] gap-4">
+  <PieChart unit="h" :size="340" hide-legend :segments="[
+    { label: '映画/MLB/ゲーム', value: 5, color: '#ef4444' },
+    { label: '睡眠', value: 7, color: '#334155' },
+    { label: 'ご飯', value: 1, color: '#22c55e' },
+    { label: '昼寝', value: 2, color: '#f59e0b' },
+    { label: '映画/ゲーム', value: 3, color: '#8b5cf6' },
+    { label: 'ご飯', value: 1, color: '#22c55e' },
+    { label: '映画/コード書く', value: 3, color: '#3b82f6' },
+    { label: '風呂', value: 1.5, color: '#06b6d4' },
+    { label: 'コード書く', value: 0.5, color: '#3b82f6' },
+  ]" />
+  <div class="flex flex-col gap-4 text-sm">
+    <div><mdi-weather-night class="text-indigo-400" /> どちらかと言えば夜型</div>
+    <div><mdi-bathtub-outline class="text-cyan-400" /> 1hくらい湯船に浸かる</div>
+    <div><mdi-terminal class="text-blue-400" /> 自分用に書くけど一応OSSとして公開はしてる</div>
+    <img src="/screenshots/github-pinned-repos.png" class="rounded-lg mt-2" />
+  </div>
+</div>
+
+---
+
+# ちょっと前にハマってたこと
+
+<div class="grid grid-cols-2 gap-4 mt-2" style="height: 400px">
+  <div class="flex flex-col gap-16">
+    <div class="bg-white/5 border border-white/10 rounded-lg p-4">
+      <div class="text-lg font-bold mb-2"><mdi-console-line class="text-green-400" /> シェルの起動速度チューニング</div>
+      <p class="text-sm opacity-80">zshの起動時間を定点観測しながらチューニング。<br />プラグインの遅延読み込みやキャッシュの活用とか。</p>
+    </div>
+    <div class="bg-white/5 border border-white/10 rounded-lg p-4">
+      <div class="text-lg font-bold mb-2"><mdi-github class="text-purple-400" /> GitHubのプロフィール</div>
+      <p class="text-sm opacity-80">コントリビューショングラフをパクパク食べるやつ。<br />GitHub Actionsで自動生成。</p>
+    </div>
+  </div>
+  <div class="flex flex-col gap-0 overflow-hidden">
+    <img src="/screenshots/shell-startup-time.png" class="rounded-lg block w-full" />
+    <img src="https://raw.githubusercontent.com/mfyuu/mfyuu/output/github-contribution-grid-snake.svg" class="rounded-lg block w-full" />
+  </div>
+</div>
 
 ---
 layout: center
