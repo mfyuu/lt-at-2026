@@ -40,6 +40,14 @@ layout: image-right
 <img src="/illustrations/undraw_swipe-profiles.svg" class="w-1/2 fixed right-8 bottom-1/4" />
 
 ---
+
+# 16Personalities
+
+<div class="flex justify-center mt-4">
+  <img src="/screenshots/16personalities.png" class="rounded-lg w-4/5" />
+</div>
+
+---
 layout: image-right
 ---
 
