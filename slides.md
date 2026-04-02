@@ -35,7 +35,6 @@ layout: image-right
 - 2019年入社
 - ICT採用
 - 2人+1匹暮らし
-- マイペース / 自由
 
 <img src="/illustrations/undraw_swipe-profiles.svg" class="w-1/2 fixed right-8 bottom-1/4" />
 
@@ -88,46 +87,6 @@ layout: image-right
 </div>
 <div class="col-span-3 bg-contain bg-center bg-no-repeat" style="background-image: url('/screenshots/daily-work.png')" />
 </div>
-
----
-
-# レビューむずかしい
-
-<div class="grid grid-cols-2 gap-8 mt-4">
-  <div class="space-y-6">
-    <div>
-      <div class="text-lg font-bold mb-2"><mdi-alert-circle class="text-red-400" /> むずかしいところ</div>
-      <ul class="text-sm space-y-1">
-        <li>AIエージェント活用で物量がえぐい</li>
-        <li>好みの押し付けをしないようにするのがむずかしい</li>
-        <li>マージ前に対応すべきかどうかの判断がむずかしい</li>
-        <li>AIあれば自分いらないのでは？と思う時もある</li>
-      </ul>
-    </div>
-    <div>
-      <div class="text-lg font-bold mb-2"><mdi-thumb-up class="text-blue-400" /> やりがい</div>
-      <ul class="text-sm space-y-1">
-        <li>教えるの嫌いじゃない</li>
-        <li>レビュイーが成長したところを見れるといい感じ</li>
-      </ul>
-    </div>
-    <div>
-      <div class="text-lg font-bold mb-2"><mdi-shield-check class="text-green-400" /> 気をつけたいこと</div>
-      <ul class="text-sm">
-        <li>呼ばれてないのに出しゃばらない</li>
-      </ul>
-    </div>
-  </div>
-  <div class="flex items-center justify-center">
-    <img src="/illustrations/undraw_engineering-team.svg" class="w-4/5" />
-  </div>
-</div>
-
----
-layout: image
-image: /screenshots/pr-before-after.png
-backgroundSize: contain
----
 
 ---
 
